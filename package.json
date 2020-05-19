@@ -17,7 +17,9 @@
     "redredisearch": "^0.0.1"
   },
   "devDependencies": {},
-  "scripts": {},
+  "scripts": {
+    "redis": "babel-node ./lib/mysql.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/touristly/redis-search-sync.git"
