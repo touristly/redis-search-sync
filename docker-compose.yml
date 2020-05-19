@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  redis-search:
+    container_name: redis-search
+    image: redislabs/redisearch:latest
+    restart: always
+  redis-sync:
+    container_name: redis-sync
+    depends_on: ['redis-search']
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+      # args:
+      #   NODE_ENV: prod
+    ports:
+      - 3000:3000
+    command: yarn redis
+    restart: always
+    environment:
+      NODE_ENV: dev
+      REDIS_HOST: redis-search

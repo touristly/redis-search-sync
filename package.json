@@ -1,0 +1,31 @@
+{
+  "name": "redis-search-sync",
+  "version": "1.0.0",
+  "description": "Sync offer records from activities db into redis search instance",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "mysql": "^2.18.1",
+    "redis": "^3.0.2",
+    "redis-redisearch": "^1.0.1",
+    "redisearchclient": "^1.0.1",
+    "redredisearch": "^0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/touristly/redis-search-sync.git"
+  },
+  "author": "Ankit Khosla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/touristly/redis-search-sync/issues"
+  },
+  "homepage": "https://github.com/touristly/redis-search-sync#readme"
+}
