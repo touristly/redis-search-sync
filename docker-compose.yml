@@ -15,7 +15,7 @@ services:
       #   NODE_ENV: prod
     ports:
       - 3000:3000
-    command: yarn redis
+    command: yarn mysql
     restart: always
     environment:
       NODE_ENV: dev

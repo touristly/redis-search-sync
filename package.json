@@ -11,6 +11,7 @@
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.6",
     "mysql": "^2.18.1",
+    "pino": "^6.2.1",
     "redis": "^3.0.2",
     "redis-redisearch": "^1.0.1",
     "redisearchclient": "^1.0.1",
@@ -18,7 +19,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "redis": "babel-node ./lib/mysql.js"
+    "mysql": "babel-node ./lib/mysql.js"
   },
   "repository": {
     "type": "git",
